@@ -23,7 +23,6 @@ import net.minecraft.world.World;
 import fi.dy.masa.malilib.util.Constants;
 import fi.dy.masa.malilib.util.IntBoundingBox;
 import fi.dy.masa.minihud.mixin.IMixinAbstractFurnaceBlockEntity;
-import fi.dy.masa.minihud.util.MiscUtils;
 
 public class MiscUtils
 {
