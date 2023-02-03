@@ -23,6 +23,7 @@ import net.minecraft.world.World;
 import fi.dy.masa.malilib.util.Constants;
 import fi.dy.masa.malilib.util.IntBoundingBox;
 import fi.dy.masa.minihud.mixin.IMixinAbstractFurnaceBlockEntity;
+import fi.dy.masa.minihud.util.MiscUtils;
 
 public class MiscUtils
 {
@@ -45,6 +46,18 @@ public class MiscUtils
         }
 
         return (double) sum / (double) values.length;
+    }
+
+    public static long longAverage(long[] values) {
+        final int size = values.length;
+        long sum = 0;
+
+        for (int i = 0; i < size; ++i)
+        {
+            sum += values[i];
+        }
+
+        return sum / size;
     }
 
     public static boolean canSlimeSpawnAt(int posX, int posZ, long worldSeed)
