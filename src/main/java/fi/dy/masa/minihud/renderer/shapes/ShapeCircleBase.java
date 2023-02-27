@@ -92,7 +92,7 @@ public abstract class ShapeCircleBase extends ShapeBlocky
 
     protected BlockPos getCenterBlock()
     {
-        return BlockPos.method_49638(this.effectiveCenter);
+        return BlockPos.ofFloored(this.effectiveCenter);
     }
 
     @Override
