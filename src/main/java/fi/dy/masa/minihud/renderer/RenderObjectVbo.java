@@ -20,7 +20,7 @@ public class RenderObjectVbo extends RenderObjectBase
     {
         super(glMode, shader);
 
-        this.vertexBuffer = new VertexBuffer(VertexBuffer.class_8555.STATIC);
+        this.vertexBuffer = new VertexBuffer(VertexBuffer.Usage.STATIC);
         this.format = format;
 
         boolean hasTexture = false;
